@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="page.css"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<div id="fullpage">  
+		  <div class="section">
+			<p id="info">Scroll down...</p>
+			    <div class="time-circle">
+		  			<div class="sun"></div>
+		              <div class="moon">
+		                <div></div>
+		                <div></div>
+		                <div></div>
+		              </div>
+					<div class="stars">
+		                <div></div>
+		                <div></div>
+		                <div></div>
+		                <div></div>
+		                <div></div>
+		                <div></div>
+		                <div></div>
+					</div>
+		         	<div class="water"></div>
+		        </div>
+			    <div id="intro-text">
+		          <h1 href="#">day night simulation</h1>
+		          <h4>by Szymon Stypa, inspired by pens on Codepen</h4>
+		        </div>
+				<div id="switch">
+	 				<div id="circle"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$("#switch").click(function () {
+				if ($("#fullpage").hasClass("night")) {
+					$("#fullpage").removeClass("night");
+					$("#switch").removeClass("switched");
+				}
+				else {
+					$("#fullpage").addClass("night");
+					$("#switch").addClass("switched");
+
+				}
+			});
+		</script>
+	</body>
+</html>
